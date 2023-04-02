@@ -1,7 +1,7 @@
 # python3
 
 class Contact:
-    def __init__(self, type_ number, name):
+    def __init__(self, type_, number, name):
         self.type = type_
         #self.type = query[0]
         self.number = number
