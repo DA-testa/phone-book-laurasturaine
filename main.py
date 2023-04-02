@@ -1,7 +1,7 @@
 # python3
 
 class Contact:
-    def __init__(self, number, name):
+    def __init__(self, type_ number, name):
         self.type = type_
         #self.type = query[0]
         self.number = number
@@ -60,8 +60,8 @@ if __name__ == '__main__':
     for i in range(inp):
         query = input().split()
         if query[0] =='add':
-            queries.append(Contact(int(query[1]), query[2]))
+            queries.append(Contact(query[0], int(query[1]), query[2]))
         else:
-            queries.append(Contact(int(query[1]), None))
+            queries.append(Contact(query[0], int(query[1]), None))
     write_responses(process_queries(queries))
 
