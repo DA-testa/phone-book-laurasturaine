@@ -2,6 +2,7 @@
 
 class Contact:
     def __init__(self, number, name):
+        self.type = type_
         #self.type = query[0]
         self.number = number
         #if self.type == 'add':
