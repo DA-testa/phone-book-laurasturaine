@@ -11,7 +11,9 @@ class Contact:
   #  n = int(input())
   #  return [Query(input().split()) for i in range(n)]
 
-#def write_responses(result):
+def write_responses(result):
+    for r in result:
+        print(r)
   #  print('\n'.join(result))
 
 def process_queries(queries):
