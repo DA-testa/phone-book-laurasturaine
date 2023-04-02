@@ -55,10 +55,10 @@ if __name__ == '__main__':
     inp=int(input())
     queries =[]
     for i in range(inp):
-        quey = input().split()
+        query = input().split()
         if query[0] =='add':
             queries.append(Contact(int(query[1]), query[2]))
         else:
             queries.append(Contact(int(query[1]), None))
-    write_responses(process_queries(read_queries()))
+    write_responses(process_queries(queries))
 
